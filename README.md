@@ -27,6 +27,14 @@ The app is available at `localhost:3001`
 ### Docker Note
 SSR is disabled in Nuxt.js to simplify Docker networking. All API calls happen from browser to `localhost:3000`.
 
+## CI/CD Pipeline
+
+The project includes a GitHub Actions workflow (`.github/workflows/deploy.yml`). It is for demonstration purposes and is not supposed to run in a real environment without modifications.
+It contains build and deploy steps only and can be improved further with testing and notification steps; if needed, platforms other than `linux/amd64` can be added.
+
+
+Images are tagged with both commit SHA and `latest` tag for easy deployment.
+
 ## Dev Environment Setup 
 <details>
 <summary>(and/or manual run)</summary>
@@ -36,7 +44,7 @@ SSR is disabled in Nuxt.js to simplify Docker networking. All API calls happen f
 
 ### Backend
 Go to the `be` folder.
-Ceate an `.env. file
+Create an `.env` file
 ```
 DATABASE_URL="your-postgres-connection-string"
 ```
