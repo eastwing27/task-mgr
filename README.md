@@ -108,8 +108,9 @@ I was trying to follow the standard Nuxt.js project structure with the following
   - Loading indicators for API calls.
   - Confirmation dialogs for deleting tasks.
   - Error handling and user feedback for API calls.
-  - All the columns can be made sortable.
+  - All the columns can be made sortable (at the moment, ID and Deadline only).
   - Better looking dropdowns.
+  - No status dropdown wehn creating a new task
   - Date pickers for deadline input are require time entered manually. This should be improved.
 - Better mobile support.
 - SSR is set to false for simplicity, it can be enabled for better SEO and initial load performance but requires proper Docker networking setup.
