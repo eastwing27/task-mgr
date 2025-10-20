@@ -24,7 +24,9 @@ sudo docker-compose up --build
 ```
 The app is available at `localhost:3001`
 
-## Dev Environment Setup (and/or manual run) 
+<details>
+<summary>## Dev Environment Setup (and/or manual run)</summary>
+
  - Make sure you've got Redis installed.
  - Make sure you've got either local or remote Postgres DB available.
 
@@ -54,3 +56,5 @@ npm install
 npm run dev
 ```
 The app is available at `localhost:3001`
+
+</details>
